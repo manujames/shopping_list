@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: teal;
+}
+
+#heading{
+    color: white;
+    text-align: center;
+}
+
+#box{
+    background-color: yellowgreen;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+}

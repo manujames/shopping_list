@@ -1,0 +1,223 @@
+{
+    "items":[
+        {
+            "sno":"G01",
+            "name":"Rice"
+        },
+        {
+            "sno":"G02",
+            "name":"Wheat"
+        },
+        {
+            "sno":"P01",
+            "name": "Rice Flour"
+        },
+        {
+            "sno":"P02",
+            "name": "Wheat Flour"
+        },
+        {
+            "sno":"P03",
+            "name": "Chilly Powder"
+        },
+        {
+            "sno":"P04",
+            "name": "Turmeric Powder"
+        },
+        {
+            "sno":"P05",
+            "name": "Pepper Powder"
+        },
+        {
+            "sno":"P06",
+            "name": "Meat Masala"
+        },
+        {
+            "sno":"O01",
+            "name": "Coconut Oil"
+        },
+        {
+            "sno":"C01",
+            "name": "Salt"
+        },
+        {
+            "sno":"C02",
+            "name": "Sugar"
+        },
+        {
+            "sno":"D01",
+            "name": "Milk"
+        },
+        {
+            "sno":"D02",
+            "name": "Egg"
+        },
+        {
+            "sno":"V01",
+            "name": "Onion"
+        },
+        {
+            "sno":"V02",
+            "name": "Carrot"
+        },
+        {
+            "sno":"V03",
+            "name": "Tomato"
+        },
+        {
+            "sno":"M01",
+            "name": "Fish"
+        },
+        {
+            "sno":"M02",
+            "name": "Meat"
+        }
+    ],
+    
+    "details":{
+        "G01": {
+            "sno":"G01",
+            "name": "Rice",
+            "department":"Grains",
+            "qty":"5",
+            "unit":"Kg",
+            "notes":""
+        },
+        "G02":{
+            "sno":"G02",
+            "name": "Wheat",
+            "department":"Grains",
+            "qty":"2",
+            "unit":"Kg",
+            "notes":""
+        },
+        "P01":{
+            "sno":"P01",
+            "name": "Rice Flour",
+            "department":"Flours and Powders",
+            "qty":"2",
+            "unit":"Kg",
+            "notes":""
+        },
+        "P02":{
+            "sno":"P02",
+            "name": "Wheat Flour",
+            "department":"Flours and Powders",
+            "qty":"2",
+            "unit":"Kg",
+            "notes":""
+        },
+        "P03":{
+            "sno":"P03",
+            "name": "Chilly Powder",
+            "department":"Flours and Powders",
+            "qty":"1",
+            "unit":"Kg",
+            "notes":""
+        },
+        "P04":{
+            "sno":"P04",
+            "name": "Turmeric Powder",
+            "department":"Flours and Powders",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "P05":{
+            "sno":"P05",
+            "name": "Pepper Powder",
+            "department":"Flours and Powders",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "P06":{
+            "sno":"P06",
+            "name": "Meat Masala",
+            "department":"Flours and Powders",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "O01":{
+            "sno":"O01",
+            "name": "Coconut Oil",
+            "department":"Oils",
+            "qty":"1",
+            "unit":"Litre",
+            "notes":""
+        },
+        "C01":{
+            "sno":"C01",
+            "name": "Salt",
+            "department":"Condiments",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "C02":{
+            "sno":"C02",
+            "name": "Sugar",
+            "department":"Condiments",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "D01":{
+            "sno":"D01",
+            "name": "Milk",
+            "department":"Diary and Eggs",
+            "qty":"500",
+            "unit":"ml",
+            "notes":""
+        },
+        "D02":{
+            "sno":"D02",
+            "name": "Egg",
+            "department":"Diary and Eggs",
+            "qty":"10",
+            "unit":"nos",
+            "notes":""
+        },
+        "V01":{
+            "sno":"V01",
+            "name": "Onion",
+            "department":"Vegetables",
+            "qty":"1",
+            "unit":"Kg",
+            "notes":""
+        },
+        "V02":{
+            "sno":"V02",
+            "name": "Carrot",
+            "department":"Vegetables",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "V03":{
+            "sno":"V03",
+            "name": "Tomato",
+            "department":"Vegetables",
+            "qty":"500",
+            "unit":"gm",
+            "notes":""
+        },
+        "M01":{
+            "sno":"M01",
+            "name": "Fish",
+            "department":"Meat and Fish",
+            "qty":"1",
+            "unit":"Kg",
+            "notes":""
+        },
+        "M02":{
+            "sno":"M02",
+            "name": "Meat",
+            "department":"Meat and Fish",
+            "qty":"1",
+            "unit":"Kg",
+            "notes":""
+        }
+    }
+}
