@@ -32,7 +32,7 @@ function buildBox(){
         }
     };
     
-    xhttp.open("GET", "./list.json",true);
+    xhttp.open("GET", "./json/list.json",true);
     xhttp.send();
 }
 
