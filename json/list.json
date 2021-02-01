@@ -118,7 +118,7 @@
             "department":"Vegetables",
             "qty":"500",
             "unit":"gm",
-            "notes":""
+            "notes":"-"
         },
         {
             "sno":"16",
@@ -126,7 +126,7 @@
             "department":"Vegetables",
             "qty":"500",
             "unit":"gm",
-            "notes":"-"
+            "notes":"Small size"
         },
         {
             "sno":"17",
@@ -134,12 +134,29 @@
             "department":"Meat and Fish",
             "qty":"1",
             "unit":"Kg",
-            "notes":""
+            "notes":"Fresh"
         },
         {
             "sno":"18",
             "name": "Meat",
             "department":"Meat and Fish",
+            "qty":"1",
+            "unit":"Kg",
+            "notes":"-"
+        },
+        {
+            "sno":"19",
+            "name": "Sanitizer",
+            "department":"Health Care",
+            "qty":"1",
+            "unit":"Bottle",
+            "notes":"Small bottle"
+        }
+        ,
+        {
+            "sno":"20",
+            "name": "Apple",
+            "department":"Fruits",
             "qty":"1",
             "unit":"Kg",
             "notes":"-"
