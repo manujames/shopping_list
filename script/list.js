@@ -3,7 +3,7 @@ let table = document.getElementById('table');
 let message = document.getElementById('message');
 let jsonPath = "./json/list.json";
 
-function buildBox(){
+function buildBox(selectedDept='all'){
     // Read data from json and build dropdown and table
     let xhttp = new XMLHttpRequest();
     
@@ -18,8 +18,8 @@ function buildBox(){
             try{
                 let items = JSON.parse(this.responseText).items;
                 msg = "";
-                buildDropdown(items);
-                buildTable(items,'all');
+                buildDropdown(items, selectedDept);
+                buildTable(items,selectedDept);
             }
             catch(err){
                 msg = "<h3 class='text-center'>Sorry! Invalid data in table.</h3>";
@@ -46,53 +46,23 @@ function buildBox(){
     xhttp.send();
 }
 
-function refreshBox(selectedDept){
-    // Read data from json and refresh table
-    let xhttp = new XMLHttpRequest();
-    
-    xhttp.onreadystatechange = function(){
-        if(this.readyState == 1 || this.readyState == 2 || this.readyState == 3 && this.status == 200){
-            message.innerHTML = "<h3 class='text-center'>Loading...</h3>";
-            table.innerHTML = "";
-        }
-        else if(this.readyState == 4 && this.status == 200){
-            let msg = "";
-            try{
-                let items = JSON.parse(this.responseText).items;
-                msg = "";
-                buildTable(items,selectedDept);
-            }
-            catch(err){
-                msg = "<h3 class='text-center'>Sorry! Invalid data in table.</h3>";
-                table.innerHTML = "";
-            }
-            finally{
-                message.innerHTML = msg;
-            }
-        }
-        else if(this.status == 404){
-            message.innerHTML = "<h3 class='text-center'>404! List not found.</h3>";
-            table.innerHTML = "";
-        }
-        else{
-            message.innerHTML = "<h3 class='text-center'>Sorry! Something went wrong.</h3>";
-            table.innerHTML = "";
-        }
-    };
-    
-    xhttp.open("GET",jsonPath,true);
-    xhttp.send();
-}
-
-function buildDropdown(itemsList){
+function buildDropdown(itemsList,dept){
     // Build dropdown list from the set of departments in json.
     let uniqueDepts = [];
     let dropdownContent = "<p>Choose category</p>";
-    dropdownContent += "<select class='form-control' onchange='refreshBox(this.value);' name='dept' id='dept'>";
-    dropdownContent += "<option value='all' selected>All</option>";
+    dropdownContent += "<select class='form-control' onchange='buildBox(this.value);' name='dept' id='dept'>";
+    dropdownContent += "<option value='all'"; 
+    if(dept === 'all'){
+        dropdownContent += " selected";
+    }
+    dropdownContent += ">All</option>";
     for (let i in itemsList){
         if(uniqueDepts.indexOf(itemsList[i].department) === -1){
-            dropdownContent += `<option value='${itemsList[i].department}'>${itemsList[i].department}</option>`;
+            dropdownContent += `<option value='${itemsList[i].department}'`;
+            if(dept === itemsList[i].department){
+                dropdownContent += " selected";
+            }
+            dropdownContent += `>${itemsList[i].department}</option>`;
             uniqueDepts.push(itemsList[i].department);
         }
     }
@@ -120,4 +90,4 @@ function buildTable(itemList,dept){
     table.innerHTML = tableContent;
 }
 
-window.addEventListener('load',buildBox);
+window.addEventListener('load',buildBox());
